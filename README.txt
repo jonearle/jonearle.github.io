@@ -72,25 +72,24 @@ pictures/work/llacpfp.jpeg
 
 File structure:
 
-A2_B01066941
--> Website
-  -> index.html
-  -> life.html
-  -> skills.html
-  -> work.html
-  -> feedback.html
-  -> pictures
-    -> home
-      -> .jpg, .png, ...
-    -> life
-    -> work
-    -> skills
-  -> js
-    -> index.js
-  -> css
-    -> index.css
-    -> life.css
-    -> skills.css
-    -> work.css
-    -> feedback.css
+A3_B01066941
+-> index.html
+-> life.html
+-> skills.html
+-> work.html
+-> feedback.html
+-> pictures
+  -> home
+    -> .jpg, .png, ...
+  -> life
+  -> work
+  -> skills
+-> js
+  -> index.js
+-> css
+  -> index.css
+  -> life.css
+  -> skills.css
+  -> work.css
+  -> feedback.css
 -> README.txt
