@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #292524;
+    font-family: 'Inter';
+    margin: 0;
+}
+
+img[alt] {
+    color: red;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+header h3 {
+    margin: 0;
+}
+
+header > a > img {
+    height: 25px;
+}
+
+h2 + a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#page-title {
+    text-align: center;
+    font-size: 4vw;
+}
+
+
+#grid-container {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px 50px 50px;
+    gap: 50px;
+}
+
+#image-1, #image-2 {
+    width: 100%;
+    max-width: 650px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#education-container, #experience-container {
+    font-size: 1.2vw;
+}
+
+div > p, h4 {
+    color: #57534E;
+}
+
+.company, .school {
+    font-size: large;
+    color: #292524;
+}
+
+
+
+@media (max-width: 768px) {
+    #grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #education-container, #experience-container {
+        font-size: 2.2vw;
+    }
+
+    #experience-container {
+        order: 3;
+    }
+
+    #image-1 {
+        order: 4;
+
+    }
+
+    #education-container {
+        order: 1;
+        width: 100%;
+    }
+
+    #image-2 {
+        order: 2;
+    }
+
+    #page-title {
+        font-size: 6vw;
+    }
+}
