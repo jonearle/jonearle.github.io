@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #292524;
+    font-family: 'Inter';
+    margin: 0;
+}
+
+img[alt] {
+    color: red;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+header h3 {
+    margin: 0;
+}
+
+header > a > img {
+    height: 25px;
+}
+
+h2 + a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#page-title {
+    text-align: center;
+    font-size: 5vw;
+}
+
+#project-title {
+    text-align: center;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px 50px 50px;
+    gap: 50px;
+}
+
+#image-1, #image-2 {
+    width: 100%;
+    max-width: 650px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1 ~ p {
+    color: #57534E;
+}
+
+#skills-table {
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 20px;
+  font-weight: bold;
+  color: #57534E;
+}
+
+#table-container {
+    margin: -20px;
+}
+
+#project-container, #skills-container {
+    font-size: 1.2vw;
+}
+
+em {
+    color: #57534E;
+    font-weight: 400;
+}
+
+/* Only mobile - tablet is already scaled correctly with css above*/
+@media (max-width: 768px) {
+    #grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #project-container, #skills-container {
+    font-size: 2.2vw;
+    }
+
+    #image-1 {
+        order: 4;
+    }
+}

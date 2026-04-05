@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #292524;
+    text-align: center;
+    font-family: 'Inter';
+    margin: 0;
+}
+
+img[alt] {
+    color: red;
+}
+
+table {
+    width: 100%;
+}
+
+table td {
+    width: 33%;
+}
+
+#line {
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
+h1 {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+#check-out img,
+#check-out video {
+    width: 85%;
+    height: 520px;
+}
+
+
+#headshot {
+    height: 360px;
+    border-radius: 10%;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: black;
+    background-image: url("../pictures/home/heroimage2.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+#scroll-arrow {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;                    
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#scroll-arrow > img {
+    width: 20px;
+}
+
+#scroll-arrow:hover {
+    transform: translateX(-50%) scale(1.2);
+}
+
+#welcome-and-headshot-container {
+    padding: 100px;
+    margin-bottom: 80px;
+}
+
+#welcome-container {
+    font-size: larger;
+    color: white;
+    border-radius: 10%;
+    padding: 10px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+#linkedin {
+    color: lightblue;
+}
+
+#headshot:hover {
+    transform: scale(1.1);
+}
+
+#check-out-header {
+    font-size: 40px;
+}
+
+#check-out {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 80px;
+    gap: 50px;
+    width: 100vw;
+}
+
+#check-out > p {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.check-out-item > p {
+    font-size: large;
+    font-weight:bold;
+}
+
+a > img:hover {
+    transform: scale(1.03);
+}
+
+a > img,  #headshot {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+#work-title::before, #work-title::after {
+    content: "🧑‍💻";
+}
+
+#experience-title::before, #experience-title::after {
+    content: "📚";
+}
+
+#life-title::before, #life-title::after {
+    content: "📸";
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 20px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+#feedback-button {
+    margin: 20px 0;
+    font-weight: bold;
+    color: black;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    #welcome-and-headshot-container {
+        padding: 50px;
+    }
+
+    #welcome-container {
+        font-size: small;
+    }
+
+    #headshot {
+        height: 250px;
+        width: auto;
+    }
+
+    #check-out img {
+        height: 380px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    #welcome-and-headshot-container {
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+
+    #welcome-container {
+        text-align: center;
+    }
+
+    #check-out {
+        flex-direction: column;
+    }
+
+    #check-out img {
+        width: auto;
+        height: 500px;
+
+    }
+
+    #check-out-header {
+        margin: 30px 0 15px 0;
+    }
+}
+
